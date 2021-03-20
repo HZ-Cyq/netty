@@ -19,7 +19,7 @@ public class EchoClientHandler
     @Override
     public void channelActive(ChannelHandlerContext ctx) {
         //当被通知 Channel是活跃的时候，发送一条消息
-        ctx.writeAndFlush(Unpooled.copiedBuffer("Netty rocks!",
+        ctx.writeAndFlush(Unpooled.copiedBuffer("Netty rocks! cyq operate",
                 CharsetUtil.UTF_8));
     }
 
